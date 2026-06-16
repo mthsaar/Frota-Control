@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Frota Control</string>
+    <string name="frota_control">Frota Control</string>
+    <string name="veiculo">Veículo:</string>
+    <string name="motorista">Motorista:</string>
+    <string name="passageiro">Passageiro:</string>
+    <string name="salvar">Salvar</string>
+    <string name="nome_do_passageiro">Nome do passageiro</string>
+    <string name="nome_do_motorista">Nome do motorista</string>
+    <string name="viatura_utilizada">Viatura utilizada</string>
+    <string name="logotipo_do_app_carro_com_setas">Logotipo do app, carro com setas</string>
+    <string name="cancelar">Cancelar</string>
+</resources>
