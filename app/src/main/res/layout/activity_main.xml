@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <TextView
@@ -64,6 +64,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:hint="@string/viatura_utilizada"
+            android:importantForAutofill="no"
+            android:inputType="text"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@id/tvVeiculo"
             app:layout_constraintEnd_toEndOf="parent"
@@ -98,6 +100,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:hint="@string/nome_do_motorista"
+            android:importantForAutofill="no"
+            android:inputType="text"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@id/tvMotorista"
             app:layout_constraintEnd_toEndOf="parent"
@@ -132,6 +136,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:hint="@string/nome_do_passageiro"
+            android:importantForAutofill="no"
+            android:inputType="text"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@id/tvPassageiro1"
             app:layout_constraintEnd_toEndOf="parent"
