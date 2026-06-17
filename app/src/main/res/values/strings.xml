@@ -10,4 +10,7 @@
     <string name="viatura_utilizada">Viatura utilizada</string>
     <string name="logotipo_do_app_carro_com_setas">Logotipo do app, carro com setas</string>
     <string name="cancelar">Cancelar</string>
+    <string name="listar">Listar</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="novo_cadastro">Novo cadastro</string>
 </resources>

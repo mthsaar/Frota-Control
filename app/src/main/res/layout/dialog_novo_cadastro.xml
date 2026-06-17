@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivIconCarro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/tvVeiculo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvVeiculo"
+        app:srcCompat="@drawable/ic_carro" />
+
+    <TextView
+        android:id="@+id/tvVeiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/veiculo"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/ivIconCarro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etVeiculo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/viatura_utilizada"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvVeiculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvVeiculo"
+        app:layout_constraintTop_toTopOf="@id/tvVeiculo" />
+
+    <ImageView
+        android:id="@+id/ivIconMotorista"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/tvMotorista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvMotorista"
+        app:srcCompat="@drawable/ic_volantequente" />
+
+    <TextView
+        android:id="@+id/tvMotorista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/motorista"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/ivIconMotorista"
+        app:layout_constraintTop_toBottomOf="@+id/etVeiculo" />
+
+    <EditText
+        android:id="@+id/etMotorista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/nome_do_motorista"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvMotorista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvMotorista"
+        app:layout_constraintTop_toTopOf="@id/tvMotorista" />
+
+    <ImageView
+        android:id="@+id/ivIconPassageiro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/tvPassageiro1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPassageiro1"
+        app:srcCompat="@drawable/ic_passageiro" />
+
+    <TextView
+        android:id="@+id/tvPassageiro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/passageiro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/ivIconPassageiro"
+        app:layout_constraintTop_toBottomOf="@+id/etMotorista" />
+
+    <EditText
+        android:id="@+id/etPassageiro1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/nome_do_passageiro"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvPassageiro1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPassageiro1"
+        app:layout_constraintTop_toTopOf="@id/tvPassageiro1" />
+
+    <Button
+        android:id="@+id/bt_Salvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassageiro1" />
+
+    <Button
+        android:id="@+id/bt_Cancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Salvar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

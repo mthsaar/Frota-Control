@@ -36,136 +36,44 @@
             app:srcCompat="@drawable/ic_carroseta"
             tools:layout_editor_absoluteX="170dp" />
 
-        <ImageView
-            android:id="@+id/ivIconCarro"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="16dp"
-            android:contentDescription="@null"
-            app:layout_constraintBottom_toBottomOf="@id/tvVeiculo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tvVeiculo"
-            app:srcCompat="@drawable/ic_carro" />
-
-        <TextView
-            android:id="@+id/tvVeiculo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/veiculo"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@id/ivIconCarro"
-            app:layout_constraintTop_toBottomOf="@+id/tvFrotaControl" />
-
-        <EditText
-            android:id="@+id/etVeiculo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:hint="@string/viatura_utilizada"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/tvVeiculo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tvVeiculo"
-            app:layout_constraintTop_toTopOf="@id/tvVeiculo" />
-
-        <ImageView
-            android:id="@+id/ivIconMotorista"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="16dp"
-            android:contentDescription="@null"
-            app:layout_constraintBottom_toBottomOf="@id/tvMotorista"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tvMotorista"
-            app:srcCompat="@drawable/ic_volantequente" />
-
-        <TextView
-            android:id="@+id/tvMotorista"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/motorista"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@id/ivIconMotorista"
-            app:layout_constraintTop_toBottomOf="@+id/etVeiculo" />
-
-        <EditText
-            android:id="@+id/etMotorista"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:hint="@string/nome_do_motorista"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/tvMotorista"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tvMotorista"
-            app:layout_constraintTop_toTopOf="@id/tvMotorista" />
-
-        <ImageView
-            android:id="@+id/ivIconPassageiro"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="16dp"
-            android:contentDescription="@null"
-            app:layout_constraintBottom_toBottomOf="@id/tvPassageiro1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tvPassageiro1"
-            app:srcCompat="@drawable/ic_passageiro" />
-
-        <TextView
-            android:id="@+id/tvPassageiro1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/passageiro"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@id/ivIconPassageiro"
-            app:layout_constraintTop_toBottomOf="@+id/etMotorista" />
-
-        <EditText
-            android:id="@+id/etPassageiro1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:hint="@string/nome_do_passageiro"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/tvPassageiro1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvPassageiro1"
-            app:layout_constraintTop_toTopOf="@id/tvPassageiro1" />
-
         <Button
-            android:id="@+id/bt_Salvar"
+            android:id="@+id/bt_NovoCadastro"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/salvar"
+            android:layout_marginTop="64dp"
+            android:text="@string/novo_cadastro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPassageiro1" />
+            app:layout_constraintTop_toBottomOf="@+id/tvFrotaControl"
+            app:layout_constraintBottom_toTopOf="@id/bt_Listar" />
+
 
         <Button
-            android:id="@+id/bt_Cancelar"
+            android:id="@+id/bt_Listar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/red"
-            android:text="@string/cancelar"
+            android:text="@string/listar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bt_Salvar" />
+            app:layout_constraintTop_toBottomOf="@id/bt_NovoCadastro"
+            app:layout_constraintBottom_toTopOf="@id/bt_Pesquisar" />
+
+        <Button
+            android:id="@+id/bt_Pesquisar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/pesquisar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_Listar" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
